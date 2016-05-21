@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style>
+		div#sec{
+			color:red;
+		}
+		div[id]{
+			font-size:50px;
+		}
+		div[name="third"] {
+			color:yellow;
+		}
+		div[name][class] {
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div>first</div>
+	<div id="sec">second</div>
+	<div name="third">third</div>
+	<div name="four" class="four">four</div>
+</body>
+</html>

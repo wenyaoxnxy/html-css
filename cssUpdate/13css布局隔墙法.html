@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css样式布局</title>
+	<style type="text/css">
+		*{padding: 0; margin:0;}
+		.header, .asider, .main, .footer{
+			background-color: green;
+			border:1px solid red;
+			margin-bottom: 5px;
+		}
+		.header{
+			height: 100px;
+		}
+		
+		.asider {
+			height: 200px;
+			width: 200px;
+			float: left;
+		}
+		.main {
+			height: 200px;
+			width: 500px;
+			float: left;
+		}
+		.footer{
+			height: 50px;
+		}
+		.clearboth {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">header</div>
+	<div class="asider">asider</div>
+	<div class="main">main</div>
+	<!-- 放置专门处理清除浮动的div -->
+	<div class="clearboth"></div>
+
+	<div class="footer">footer</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css 全浮动布局</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.header,.nav ,.main, .footer ,.wrap {
+			background-color: silver;
+			border:2px solid black;
+			margin:0 auto 10px auto;
+			width: 1190px;
+		}
+		.header, .footer {
+			height: 100px;
+		}
+		.nav, .main {
+			height: 200px;
+			float: left;
+		}
+		.wrap {
+			overflow: hidden;
+		}
+		.nav {
+			width: 200px;
+		}
+		.main {
+			width: 982px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+	<div class="wrap">
+		<div class="nav">
+			nav
+		</div>
+		<div class="main">
+			mian
+		</div>
+	</div>
+	<div class="footer">
+		footer
+	</div>
+</body>
+</html>

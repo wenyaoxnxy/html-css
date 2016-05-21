@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css布局</title>
+	<style>
+		*{padding: 0;margin: 0;}
+		.header, .aside, .main, .footer {
+			background-color: yellow;
+			border: 2px solid red;
+			margin-bottom: 10px;
+		}
+		.header {
+			height: 100px;
+			float: left;
+		}
+		.aside {
+			float: left;
+			height: 300px;
+			width: 200px;
+		}
+		.main {
+			float: left;
+			height: 400px;
+			width: 500px;
+		}
+		.footer {
+			height: 200px;
+			float: left;
+		}
+		.clerafix {
+			display: table;
+		}
+		.clerafix:before, .clerafix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">header</div>
+	<div class="wrap clerafix">
+		<div class="aside">aside</div>
+		<div class="main">mian</div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

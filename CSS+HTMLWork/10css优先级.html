@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css优先级</title>
+	<style>
+		/* 优先级2 */
+		/* #warp {
+			color:green;
+		} */
+		/* 优先级3 */
+		/* .class_warp {
+			color:yellow;
+		} */
+		/* 优先级4 */
+		/* div {
+			color:#245;
+		} */
+	</style>
+</head>
+<body>
+	<!-- 优先级1->4  行内》id》class》标签-->
+	<div id="warp" class="class_warp" ><!-- 优先级1 --><!-- style="color: red" -->
+		divcontent
+	</div>
+</body>
+</html>

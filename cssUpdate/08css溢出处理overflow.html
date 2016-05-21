@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css float 高度塌陷修复</title>
+	<style>
+		.parent {
+			border:20px solid red;
+			overflow: hidden;
+			/* 超出部分进行隐藏，如果父元素没有设着高度，同时设置了overflow，将自动包裹子元素，即时子元素有浮动 */
+		}
+		.child {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+</body>
+</html>

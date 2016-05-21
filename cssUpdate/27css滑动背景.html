@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>css滑动背景</title>
+		<style>
+			*{padding: 0;margin: 0;}
+			.menu {
+				/* float: left; */
+			}
+			.menu-left {
+				display: inline-block;
+				float: left;
+				width: 18px;
+				height: 54px;
+				background: url(img/menu-left.png) no-repeat;
+			}
+			.menu-center {
+				display: inline-block;
+				vertical-align: middle;
+				float: left;
+				line-height: 54px;
+				height: 54px;
+				background: url(img/menu-center.png);
+			}
+			.menu-right {
+				display: inline-block;
+				float: left;
+				width: 36px;
+				height: 54px;
+				background: url(img/menu-right.png) no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<div class="menu">
+				<i class="menu-left"></i>
+				<span class="menu-center">首页</span>
+				<i class="menu-right"></i>
+			</div>
+			<div class="menu">
+				<i class="menu-left"></i>
+				<span class="menu-center">官方公告</span>
+				<i class="menu-right"></i>
+			</div>
+			<div class="menu">
+				<i class="menu-left"></i>
+				<span class="menu-center">就业信息指导</span>
+				<i class="menu-right"></i>
+			</div>
+			<div class="menu">
+				<i class="menu-left"></i>
+				<span class="menu-center">留言簿</span>
+				<i class="menu-right"></i>
+			</div>
+			<div class="menu">
+				<i class="menu-left"></i>
+				<span class="menu-center">添加友情链接</span>
+				<i class="menu-right"></i>
+			</div>
+		</div>
+	</body>
+</html>

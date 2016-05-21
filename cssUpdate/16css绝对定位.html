@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS绝对定位</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		.box1 {
+			height: 500px;
+			width: 500px;
+			background-color: #096;
+		}
+		.box2{
+			height: 200px;
+			width: 500px;
+			background-color: #056;
+			position: relative;
+		}
+		.box3 {
+			width: 200px;
+			height: 200px;
+			border:1px solid #895;
+			float: left;
+		}
+		.close {
+			background-color: #907;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			right:0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box1">box1</div>
+	<div class="box2">
+		<div class="box3">box3</div>
+		<div class="box4">box4</div>
+		<div class="close">
+			X
+		</div>
+	</div>
+</body>
+</html>

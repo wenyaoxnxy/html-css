@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css妙用</title>
+	<style>
+
+		img {
+			width: 200px;
+			height: 200px;
+			/* 去除边框 */
+			border: 0 none;
+		}
+		.box {
+			width: 0px;
+			height: 0px;
+			border: 100px transparent solid;
+			border-top-color:green;
+			border-bottom: 0 none;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/a.jpg">
+	<div class="box">
+	</div>
+</body>
+</html>

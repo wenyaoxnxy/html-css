@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS居中绝对定位</title>
+	<style>
+		*{padding: 0;margin: 0;}
+		.banler {	
+			width: 500px;
+			height: 500px;
+			background-color: #076;
+			margin:0 auto;
+			position: relative;
+		}
+		.slider-l,.slider-r {
+			
+			border: 1px solid #435;
+			background-color: #565;
+			color:red;
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+		}
+		.slider-l {
+			left:0;
+		}
+		.slider-r {
+			right:0;
+		}
+	</style>
+</head>
+<body>
+	<div class="banler">
+		<div class="slider-l">&lt;</div>
+		<div class="slider-r">&gt;</div>
+	</div>
+</body>
+</html>

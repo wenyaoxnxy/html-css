@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素实例</title>
+	<style>
+		.artic-txt:first-line{
+			color:red;
+		}
+		.artic-txt:first-letter{
+			font-size:50px;
+		}
+		span:first-child{
+			background-color: green;
+		}
+
+		.warp:before,.warp:after{
+			content:"-----------";
+			display:block;/* 将行内元素转换为块级元素 */
+		}
+	</style>
+</head>
+<body>
+	<p class="artic-txt">
+		2015年10月1日，三大运营商正式推出手机月套餐内剩余流量单月不清零服务，即套餐内当月剩余流量可延期结转至次月月底前使用，客户无需申请，默认开通。
+
+此前，工信部发布的数据显示，“流量不清零”政策实施一个月，三大运营商收入增速出现回落。去年10月份三大运营商电信业务总量完成2074.03亿元，同比增长28.7%，较去年10月同比增速提高11.1个百分点；电信业务收入完成833.33亿元，同比下降6.5%，较去年增速回升4.9%。
+
+流量不清零是三大运营商“提速降费”的一部分。<span>杨杰透露</span>，去年实施提速降费后，移动业务单价下降37%，固网业务单价下降55%，目前尚未收到政府新的提速降费要求。
+	</p>
+	<div>
+		<span>diyige</span>
+		<span>dierge</span>
+		<span>dosfan</span>
+	</div>
+	<p><span>sfpan</span><span>span</span></p>
+
+	<div><hr/></div>
+	<div class="warp">div</div>
+	<div><hr/></div>
+
+</body>
+</html>

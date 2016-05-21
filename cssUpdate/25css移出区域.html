@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css超出隐藏</title>
+	<style>
+		/* 1、利用text-index:-5000px
+		2、利用padding挤开盒子，并用overflow:hidden进行切割
+		3、利用marging拉动盒子，并用overflow:hidden进行切割（注意子盒子使用margin-top时会同时撑高父元素，使用overflow:hidden可以完美解决此问题） */
+		*{padding: 0;margin: 0;}
+		.warp {
+			width: 500px;
+			height: 500px;
+			background-color: yellowgreen;
+			overflow: hidden;
+		}
+		.child {
+			width: 100px;
+			height: 600px;
+			background-color: red;
+			margin:100px 0 0 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<div class="child"></div>
+	</div>
+</body>
+</html>

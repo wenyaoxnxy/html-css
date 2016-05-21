@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css雪碧图</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		.warp {
+
+		}
+		.icon {
+			vertical-align: middle;
+			display: inline-block;
+			width: 16px;
+			height: 20px;
+			background-image: url(img/jl.png);
+			background-repeat: no-repeat;
+			background-position: 0px -25px;
+			
+		}
+		.warp {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.warp2 {
+			display:table;
+		}
+		.icon2 {
+			float: left;
+			width: 16px;
+			height:20px;
+			background: url(img/jl.png) no-repeat 0px -25px;
+		}
+		.warp2 span {
+			float: left;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<i class="icon"></i><span>通讯</span>
+	</div>
+	<div class="wap2">
+		<i class="icon2"></i><span>通讯2</span>
+	</div>
+</body>
+</html>

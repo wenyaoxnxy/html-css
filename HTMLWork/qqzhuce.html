@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qq注册</title>
+</head>
+<body>
+	<h1>注册账号</h1>
+	<hr>
+	<form action="">
+		<table>
+			<tr>
+				<td>昵称</td>
+				<td><input type="text" name="nicename" id="nicename"></td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td><input type="password" name="qqpwd" id="qqpwd"></td>
+			</tr>
+			<tr>
+				<td>确认密码</td>
+				<td><input type="password" name="qqpwd2" id="qqpwd2"></td>
+			</tr>
+			<tr>
+				<td>性别</td>
+				<td>
+					<input type="radio" name="gender" id="gender-man"><label for="gender-man">男</label>
+					<input type="radio" name="gender" id="gender-nv"><label for="gender-nv">女</label>
+				</td>
+			</tr>
+			<tr>
+				<td>生日</td>
+				<td>
+					<select name="birthday" id="birthday"><option value="yangli">阳历</option><option value="yingli">阴历</option></select>
+					<select name="year" id="year"><option value="1990">1990</option><option value="1989">1989</option></select>
+					<select name="mounth" id="mounth"><option value="12">12</option><option value="5">5</option></select>
+					<select name="day" id="day"><option value="12">12</option><option value="12">12</option></select>
+				</td>
+			</tr>
+			<tr>
+				<td>所在地</td>
+				<td><select name="place" id="place"><option value="zhongguo">中国</option>
+				<option value="meiguo">美国</option></select></td>
+			</tr>
+			<tr>
+				<td>验证码</td>
+				<td><input type="text" name="yanzhengma" id="yanzhengma"></td>
+			</tr>
+			<tr>
+				<td>手机号码</td>
+				<td><input type="text" name="phoneNo" id="phoneNo"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>忘记密码时可用用手机号码快速找回<br>
+				<input type="text"><span>获取短信验证码</span><br>
+				<input type="checkbox" name="" id="">同时开通qq空间
+				<input type="checkbox" name="" id="">我已经阅读相关协议
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="提交注册"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css盒模型</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+
+			/* 边框 */
+			border-top-style:solid;
+			border-top-width: 10px;
+			border-top-color: red;
+		}
+		.box1{
+			width: 200px;
+			height: 200px;
+			border-top:10px solid greenyellow;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			border:10px double gray;
+		}
+		.box3 {
+			width: 0;
+			height: 0;
+			border:100px solid transparent;
+			border-bottom-color: green;
+			border-top: 0 none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>
